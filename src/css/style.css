@@ -1,0 +1,28 @@
+body { 
+  font-family: Arial, sans-serif; 
+   background-color: beige;
+}
+
+.add {
+  font-weight: 800;
+}
+
+textarea {
+  width: 400px; /* Полная ширина контейнера */
+  padding: 10px; /* Внутренние отступы */
+  resize: none;
+  font-size: 16px; /* Размер шрифта для удобства чтения */
+  box-sizing: border-box; /* Учитывает отступы и границы в размере */
+}
+
+.timeline { 
+  list-style-type: none; 
+  padding: 0; 
+}
+.post { 
+  border: 1px solid #ccc; 
+  margin: 10px; padding: 10px; 
+  box-sizing: border-box;
+  word-wrap: break-word; /* Перенос длинных слов */
+  max-width: 800px; /* Максимальная ширина поста */
+}
