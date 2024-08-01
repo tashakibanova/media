@@ -42,6 +42,7 @@ function addVideoPost(file, coordinates) {
 }
 
 // Обработчик текстового ввода
+document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('postInput').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         const text = event.target.value;
@@ -62,7 +63,8 @@ document.getElementById('postInput').addEventListener('keypress', function(event
             alert('Геолокация не поддерживается вашим браузером.');
         }
     }
-});
+}); 
+
 
   // Обработчик аудио загрузки
   document.getElementById('audioInput').addEventListener('change', function(event) {
@@ -103,3 +105,6 @@ document.getElementById('videoInput').addEventListener('change', function(event)
         }
     }
 });
+});
+
+module.exports = { addPost, addAudioPost, addVideoPost};
